@@ -1,0 +1,127 @@
+.content-section {
+  
+    justify-content: center;
+    flex-direction: column;
+    display: flex;align-items: center;
+      padding-top: 80px;
+      width: 100%;
+      min-height: 500px;
+    
+  }
+  .descr-first{
+    border-radius: 10px;
+    width: 90%;
+    background: linear-gradient(45deg, #000000, #413f3f, #616161, #9a9898);
+    height: max-content;
+    text-align: center;
+    font-size: larger;
+    color: aqua;
+  }
+  .border {
+    height: 5px;
+    background: linear-gradient(45deg, #00f9ff, #ff00e6);
+    margin-top: 80px;
+}
+
+.content-section h1 {
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #000000cb, #636262cb);
+  color: #aae703;
+  font-family: "Oxanium", serif;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 20px;
+  
+  /* Адаптивный размер шрифта */
+  font-size: clamp(24px, 5vw, 36px); 
+  
+  /* Центрирование текста */
+  text-align: center;
+  
+  /* Чтобы текст не выходил за границы */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+
+.content-section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+.present {
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    width: 100%;
+}
+
+.present img {
+
+    width: 20%;
+    /* border-bottom: 1px solid white; */
+    object-fit: cover;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12%;
+  align-items: center; /* Выравниваем элементы по центру */
+}
+
+.cont1, .cont2 {
+  z-index: -3;
+  width: 50%;
+}
+
+.cont1 img {
+  width: 80%; /* Уменьшаем размер картинок */
+  margin: 0 auto; /* Центрируем картинку */
+  display: block; /* Чтобы margin: 0 auto работал */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cont5{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont2 {z-index: -2;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #000000b9;
+  color: rgb(196, 221, 5);
+  display: flex;
+  justify-content: center; /* Центрируем текст */
+  align-items: center;
+  font-family: "Oxanium", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 2;
+}
+
+#section1 .cont1, #section3 .cont1, #section5 .cont1, #section7 .cont1 {
+  order: 1; /* Изображение слева */
+}
+
+#section1 .cont2, #section3 .cont2, #section5 .cont2, #section7 .cont2 {
+  order: 2; /* Текст справа */
+}
+
+#section2 .cont1, #section4 .cont1, #section6 .cont1 {
+  order: 2; /* Изображение справа */
+}
+
+#section2 .cont2, #section4 .cont2, #section6 .cont2 {
+  order: 1; /* Текст слева */
+}

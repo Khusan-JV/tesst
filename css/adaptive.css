@@ -1,0 +1,64 @@
+@media (max-width: 1200px) {
+    .cont2 {
+        font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .cont2 {
+        font-size: 10px;
+        padding: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cont2 {
+        font-size: 9px;
+        padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cont2 {
+        font-size: 8px;
+        padding: 8px;
+    }
+  }
+  @media (max-width: 768px) {
+    .btn-h {
+        font-size: 14px; /* Уменьшаем шрифт */
+        padding: 8px 15px; /* Уменьшаем отступы */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn-h {
+        font-size: 12px; /* Еще меньше шрифт для очень маленьких экранов */
+        padding: 6px 12px; /* Уменьшаем отступы еще больше */
+    }
+  }
+  @media (max-width: 768px) {
+    .header-descr{
+      font-size: small;
+    }
+    .dropbtn {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  
+    .dropdown-content a {
+      padding: 10px 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dropbtn {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  
+    .dropdown-content a {
+      padding: 8px 10px;
+    }
+  }
+  

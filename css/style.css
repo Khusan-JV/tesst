@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body, html {
+  width: 100vw;
+  height: 100%;
+  
+  overflow-x: hidden; /* Убирает горизонтальные скроллы */
+}
+.container{
+  z-index: 2;
+  height: max-content;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0000006d;
+  padding: 10px 20px;
+  z-index: 10;
+  max-height: 8%;
+}
+
+.logo{
+  width: 8%;
+  object-fit: cover;
+}
+.header-descr{
+  font-family: "Press Start 2P", serif;
+ color: rgba(255, 255, 255, 0.831);
+  
+
+}
+.dropbtn {
+  border: 2px solid #7a9103;
+  background: linear-gradient(45deg, #3f4242, #ffe600);
+  color: rgb(253, 253, 253);
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* Стили при наведении на кнопку */
+.dropbtn:hover {
+  background: linear-gradient(45deg, #a2ff00, #033233);
+  box-shadow: 0 0 20px 5px rgba(170, 255, 0, 0.7);
+}
+
+/* Стиль для выпадающего меню */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Скрытые ссылки в выпадающем меню */
+.dropdown-content {
+  visibility: hidden; /* Элемент скрыт по умолчанию */
+  opacity: 0; /* Изначально невидимый */
+  position: absolute;
+  background-color: #3e3c3e;
+  min-width: 160px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.4); /* Мягкое свечение */
+  z-index: 1;
+  border-radius: 10px;
+  transform: translateY(-10px); /* Начальная позиция чуть выше */
+  transition: visibility 0s 0.3s, opacity 0.3s ease, transform 0.3s ease; /* Плавная анимация */
+}
+
+/* Показывать меню при наведении */
+.dropdown:hover .dropdown-content {
+  visibility: visible; /* Элемент становится видимым */
+  opacity: 1; /* Меню становится непрозрачным */
+  transform: translateY(0); /* Меню опускается в нужную позицию */
+  transition: visibility 0s, opacity 0.3s ease, transform 0.3s ease; /* Без задержки на visibility */
+}
+
+/* Стили для ссылок в меню */
+.dropdown-content a {
+  color: #96e307;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #444; /* Разделение элементов */
+  border-bottom-left-radius:5px ;
+  border-bottom-right-radius:5px ;
+}
+
+/* Стили при наведении на ссылку */
+.dropdown-content a:hover {
+  border-radius: 10px;
+  font-size: 18px;
+  color: #ffffff; /* Белый текст для контраста */
+  background: linear-gradient(45deg, #413f42, #010001); /* Черно-фиолетовый градиент */
+  box-shadow: 0 4px 10px rgba(114, 173, 13, 0.3); /* Мягкая тень для эффекта глубины */
+}
+
+/* Адаптивность */
+
+
+/* Стандартные стили кнопки */
+.btn-h {
+  border: 2px solid #00f9ff;
+  background: linear-gradient(45deg, #00f9ff, #ff00e6);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px; /* Больше отступов для удобства */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Стили для кнопки при наведении */
+.btn-h:hover {
+  background: linear-gradient(45deg, #ff00e6, #00f9ff);
+  box-shadow: 0 0 20px 5px rgba(0, 255, 255, 0.7);
+}
+
+/* Адаптивность для мобильных устройств */
+
+
+/* Border Style */
+
+
+
+/* Content Section Style */
+.content {
+
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 120px; /* Учитываем высоту хедера */
+    overflow-y: scroll; /* Прокручиваемый контент */
+}
+
+/* Убираем скроллбар для .content */
+.content::-webkit-scrollbar {
+  display: none; /* Для Chrome, Safari, Edge */
+}
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  width: 0; /* Скрываем скроллбар */
+  height: 0; /* Для горизонтального скроллбар тоже */
+}
+/* Content Section */

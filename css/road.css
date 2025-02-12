@@ -1,0 +1,83 @@
+.roadmap {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+  }
+  .timeline {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+    transform: translateX(-50%);
+  }
+  .season {
+    position: relative;
+    width: 50%;
+    padding: 10px;
+    margin: 40px 0;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  .season:nth-child(odd) {
+    left: 0;
+    text-align: right;
+  }
+  .season:nth-child(even) {
+    left: 50%;
+    text-align: left;
+  }
+  .season .circle {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background: rgb(227, 227, 227);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: background 0.3s ease-in-out;
+  }
+  .season:nth-child(odd) .circle {
+    right: -10px;
+  }
+  .season:nth-child(even) .circle {
+    left: -10px;
+  }
+  .info {
+    
+    color: rgb(209, 212, 2);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0;
+    background: rgba(17, 181, 176, 0.531);
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .season.active .info {
+    max-height: 300px;
+    opacity: 1;
+    padding: 15px;
+  }
+  .season.active .circle {
+    background: rgb(209, 212, 2);
+  }
+  .ROADMAP{
+    margin-top: 40px;
+    background-color: #18c1b684;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .head-road{
+    font-family: "Press Start 2P", serif;
+    font-size: larger;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 5%;
+    color: rgb(209, 212, 2);
+  }
+  .data-road{
+    color: rgb(16, 221, 176);
+  }
